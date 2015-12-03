@@ -38,41 +38,41 @@
       addTag('link', {rel: 'stylesheet', href: 'css/docs.css', type: 'text/css'});
       addTag('link', {rel: 'stylesheet', href: 'css/animations.css', type: 'text/css'});
 
-      
+
          addTag('link', {rel: 'stylesheet', href: 'css/prettify.css', type: 'text/css'}, sync);
-      
+
 
       addTag('script', {src: 'js/google-code-prettify.js'}, sync);
       addTag('script', {src: 'js/marked.js'}, sync);
 
-      
+
         addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js'}, sync);
-      
+
         addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js'}, sync);
-      
+
         addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js'}, sync);
-      
+
         addTag('script', {src: 'grunt-scripts/csv.js'}, sync);
-      
+
         addTag('script', {src: 'grunt-scripts/pdfmake.js'}, sync);
-      
+
         addTag('script', {src: 'grunt-scripts/vfs_fonts.js'}, sync);
-      
-      
+
+
         addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js'}, sync);
-      
+
         addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.js'}, sync);
-      
+
         addTag('script', {src: 'grunt-scripts/prettify.js'}, sync);
-      
+
         addTag('script', {src: 'grunt-scripts/marked.js'}, sync);
-      
-      
+
+
       addTag('script', {src: 'js/angular-bootstrap.js'}, sync);
       addTag('script', {src: 'js/angular-bootstrap-prettify.js'}, sync);
       addTag('script', {src: 'js/docs-setup.js'}, sync);
       addTag('script', {src: 'js/docs.js'}, sync);
-      
+
       function addTag(name, attributes, sync) {
         var el = document.createElement(name),
             attrName;
@@ -97,14 +97,6 @@
       }
     })();
 
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-46391685-1', 'auto');
-    ga('send', 'pageview');
-
   </script>
 </head>
 
@@ -119,10 +111,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          
-          
+
+
             <a  href="http://ui-grid.info"  class="navbar-brand">UI Grid</a>
-          
+
         </div>
 
         <div class="for-lg-view-hide">
@@ -195,10 +187,10 @@
         </div>
 
         <form class="form-search" ng-submit="submitForm()">
-          
+
           <input type="text" class="form-control" ng-model="search" placeholder="search the docs" aria-label="Search the documentation"
                  tabindex="0" accesskey="s" class="search-query" focused="focused">
-          
+
           <a href="" role="button" class="sr-only sr-only-focusable" ng-click="skipToContent('nav-tag')" tabindex="0">
             <div class="section">
               <span class="skiplink-text">Skip to main content</span>
@@ -280,20 +272,6 @@
         </ul>
 
         <div id="loading" ng-show="loading">Loading...</div>
-
-        <div class="row text-center">
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-6177019177103290"
-               data-ad-slot="3609320072"
-               data-ad-format="auto"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          <small><a href="" data-popover data-content="Advertising covers the costs of running this site, and funds extra support and development.">Why does this site have ads?</a></small>
-        </div>
-
         <br>
 
         <div ng-hide="loading" ng-include src="currentPage.partialUrl" onload="afterPartialLoaded()" autoscroll class="content slide-reveal"></div>
