@@ -1,1 +1,4 @@
-# ui-grid.info
+ui-grid.info
+============
+
+Website for ui-grid
