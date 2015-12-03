@@ -5,6 +5,8 @@ Fork of
 [ui-grid.info]
 (https://github.com/angular-ui/ui-grid.info)
 
+So I moved the branch gh-pages to master for convenience...
+
 ##### Blow away release directory except for
 
 * ui-grid.css
